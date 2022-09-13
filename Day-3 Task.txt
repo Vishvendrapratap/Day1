@@ -1,0 +1,56 @@
+let object=[
+    {"person":"John","age":30,"company":"Google"},
+    {"person":"Mohn","age":37,"company":"Flipkart"},
+    {"person":"Kohn","age":38,"company":"Amazon"},
+    {"person":"Sohan","age":40,"company":"Myntra"},
+    {"person":"Jenny","age":70,"company":"Apple"},
+]
+
+// for( let i=0;i<=object.length;i++){
+
+//    console.log(object[i])}
+
+   //Show all the elements of the array
+ 
+ 
+//    for( let j=0;j<=object.length;j++){
+
+//     console.log(`person on the list is: ${object[j].person}
+
+//     age of person is:${object[j].age}
+
+//     company of the person is:${object[j].company}
+//     `) }
+
+    //show the person names for all the person in the array.
+
+
+    // Forin loop
+
+//    object.forEach(persondetail => {
+//     console.log(persondetail)
+//    });
+
+// for (const index in object) {
+//         console.log(object[index])}
+
+//fetches every element by its index value
+
+// for(let data of object){
+//     console.log(data)
+// }
+//for of allop will also return all the objects in the array at once
+
+let resume={    //format of resume
+"Name":"Vishvendra Pratap Singh",
+"City":"meerut",
+"Address":"7/118 shradhapuri Kanker Khera Meerut",
+"Graduation subject":"Bsc in compuer Science",
+"college":"Deshbandhu college",
+"university":"Delhi university",
+"Experience":"3 years",
+"current designation":"Customer Support Specialist",
+"Expected Salary":"10 lacs"
+}
+
+console.log(resume)  //Print the resume
