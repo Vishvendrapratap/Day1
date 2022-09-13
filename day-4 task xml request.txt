@@ -1,0 +1,39 @@
+// var obj1={name:"Person1",age:5};
+// var obj2={age:5, name:"person1"};
+// var a = Object.keys(obj1).length
+// var b = Object.keys(obj2).length //taken length of objects using object.keys()
+//   if(a==b && obj1.person1==obj2.person1 && obj1.age==obj2.age) //compared lenghth and key values of both the objects.
+//   {console.log("both objects are same")}
+  
+//   else{
+//     console.log("objects are not same")
+//   }
+
+
+let xhr= new XMLHttpRequest(); //creating reequest
+console.log("new object created"+xhr)
+xhr.open('GET',"https://restcountries.com/v3.1/all") //open request
+
+xhr.onload = function() //onloading function
+{
+    
+        if ( xhr.status>=200&& xhr.status<300)
+        {
+            const data=JSON.parse(this.response);
+    
+               for(let i=0;i<data.length;i++) //adding for loop to fetch the objectes of the array
+               {
+                console.log(`"Flags of all countries":${data[i].flags.png}, //using template literal to display the flags and other details
+                "name of country is":${data[i].name.common}
+                "Region name is":${data[i].region}
+                "Sub-region name is":${data[i].subregion},
+                "country population is":${data[i].population}`)
+                }
+        }
+        else{
+            console.log("something is wrong")
+        }
+    
+    
+}
+xhr.send(); //request send
